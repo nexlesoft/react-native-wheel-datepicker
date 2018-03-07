@@ -1,15 +1,19 @@
 # react-native-custom-date-picker-ios
 
-Manual installation
+Installation
 
-1. In XCode, in the project navigator, right click Libraries ➜ Add Files to [your project's name]
-2. Add RCTCustomDatePickerIOS.xcodeproj
-3. In XCode, in the project navigator, select your project. Add libRCTCustomDatePickerIOS.a to your project's Build Phases ➜ Link Binary With Libraries
+1. In Packgage.json , add ```"react-native-custom-datepicker-ios": "git+https://github.com/nexlesoft/react-native-wheel-datepicker.git"``` into ```dependencies```
+
+2. Run ```npm install```
+3. Then link iOS dependencies:  ```react-native link react-native-custom-datepicker-ios```
 4. Run your project (Cmd+R)
 
 How to use
 
-```import CustomDatePickerIOS from 'CustomDatePickerIOS';```
+```
+import CustomDatePickerIOS from 'react-native-custom-datepicker-ios';
+```
+
 ```
 // ...
 render() {
