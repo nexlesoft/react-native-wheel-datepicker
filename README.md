@@ -2,7 +2,7 @@
 
 Installation
 
-1. In Packgage.json , add ```"react-native-custom-datepicker-ios": "git+https://github.com/nexlesoft/react-native-wheel-datepicker.git"``` into ```dependencies```
+1. In your root project, open file packgage.json and add new line ```"react-native-custom-datepicker-ios": "git+https://github.com/nexlesoft/react-native-wheel-datepicker.git"``` into ```dependencies```
 
 2. Run ```npm install```
 3. Then link iOS dependencies:  ```react-native link react-native-custom-datepicker-ios```
