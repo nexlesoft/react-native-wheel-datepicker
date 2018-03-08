@@ -1,35 +1,18 @@
 {
-    "name": "react-native-custom-datepicker-ios",
-    "version": "0.0.1",
-    "description": "Customizable DatePickerIOS component (textColor)",
-    "main": "CustomDatePickerIOS.js",
-    "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-      "type": "git",
-      "url": "git+https://github.com/nexlesoft/react-native-wheel-datepicker.git"
-    },
-    "keywords": [
-      "react",
-      "native",
-      "react-native",
-      "ios",
-      "datepicker",
-      "datetime",
-      "date",
-      "custom",
-      "customizable"
-    ],
-    "author": "Danh DC <danhdc@nexlesoft.com>",
-    "license": "MIT",
-    "bugs": {
-      "url": "https://github.com/nexlesoft/react-native-wheel-datepicker/issues"
-    },
-    "homepage": "https://github.com/nexlesoft/react-native-wheel-datepicker",
-    "peerDependencies": {
-      "create-react-class": "^15.6.3",
-      "prop-types": "^15.5.8",
-      "react-native": ">=0.40.0"
-    }
+  "name": "react-native-custom-date-picker-ios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react-native"
+  ],
+  "author": "",
+  "license": "",
+  "peerDependencies": {
+    "react-native": "^0.41.2",
+    "react-native-windows": "0.41.0-rc.1"
   }
+}

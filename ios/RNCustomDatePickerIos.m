@@ -1,12 +1,5 @@
-//
-//  CustomDatePickerManager.m
-//  datepicker
-//
-//  Created by Alexander Avakov on 04/02/2018.
-//  Copyright © 2018 Facebook. All rights reserved.
-//
 
-#import "CustomDatePickerManager.h"
+#import "RNCustomDatePickerIos.h"
 #import "CustomDatePicker.h"
 
 #import <React/RCTBridge.h>
@@ -16,21 +9,21 @@
 @implementation RCTConvert(UIDatePicker)
 
 RCT_ENUM_CONVERTER(UIDatePickerMode, (@{
-  @"time": @(UIDatePickerModeTime),
-  @"date": @(UIDatePickerModeDate),
-  @"datetime": @(UIDatePickerModeDateAndTime),
-  @"countdown": @(UIDatePickerModeCountDownTimer),
-}), UIDatePickerModeTime, integerValue)
+                                        @"time": @(UIDatePickerModeTime),
+                                        @"date": @(UIDatePickerModeDate),
+                                        @"datetime": @(UIDatePickerModeDateAndTime),
+                                        @"countdown": @(UIDatePickerModeCountDownTimer),
+                                        }), UIDatePickerModeTime, integerValue)
 
 @end
 
-@implementation CustomDatePickerManager
+@implementation RNCustomDatePickerIos
 
 RCT_EXPORT_MODULE()
 
 - (UIView *)view
 {
-  return [CustomDatePicker new];
+    return [CustomDatePicker new];
 }
 
 RCT_EXPORT_VIEW_PROPERTY(date, NSDate)
@@ -43,8 +36,9 @@ RCT_REMAP_VIEW_PROPERTY(mode, datePickerMode, UIDatePickerMode)
 RCT_REMAP_VIEW_PROPERTY(timeZoneOffsetInMinutes, timeZone, NSTimeZone)
 RCT_CUSTOM_VIEW_PROPERTY(textColor, UIColor, CustomDatePicker)
 {
-  UIColor *textColor = json ? [[UIColor alloc] initWithCGColor:[RCTConvert CGColor:json]] : [UIColor blackColor];
-  [view setValue:textColor forKeyPath:@"textColor"];
+    UIColor *textColor = json ? [[UIColor alloc] initWithCGColor:[RCTConvert CGColor:json]] : [UIColor blackColor];
+    [view setValue:textColor forKeyPath:@"textColor"];
 }
 
 @end
+  

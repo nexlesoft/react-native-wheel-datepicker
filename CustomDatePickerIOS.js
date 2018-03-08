@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
     },
 });
 
-const CustomDatePickerIOS = requireNativeComponent('RCTCustomDatePickerIOS', {
+const CustomDatePickerIOS = requireNativeComponent('RNCustomDatePickerIos', {
     propTypes: {
         ...DatePickerIOS.propTypes,
         date: PropTypes.number,
