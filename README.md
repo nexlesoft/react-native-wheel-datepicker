@@ -11,7 +11,7 @@ Installation
 How to use
 
 ```
-import CustomDatePickerIOS from 'react-native-custom-datepicker-ios';
+import CustomDatePickerIOS from 'react-native-custom-datepicker-ios/CustomDatePickerIOS';
 ```
 
 ```
